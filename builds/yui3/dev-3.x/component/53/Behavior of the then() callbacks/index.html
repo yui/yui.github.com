@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for Behavior of the then() callbacks</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for Behavior of the then() callbacks</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>throwing inside a callback should turn into a rejection</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.021</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>returning a promise from a callback should link both promises</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.031</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>|this| inside a callback must be the global object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.02</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Wed May 15 2013 23:45:25 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
