@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Firefox (19_0) / Windows XP.Pjax]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Firefox (19_0) / Windows XP.Pjax]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: should plug into a Node instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;addPjaxParam&#x60; should be true by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: Pjax param should be added when &#x60;addPjaxParam&#x60; is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.19</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: Pjax param should be appended to an existing query string when &#x60;addPjaxParam&#x60; is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.19</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: Pjax param should be added before the fragment when &#x60;addPjaxParam&#x60; is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.032</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: Pjax param should not be added when &#x60;addPjaxParam&#x60; is false</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.139</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;container&#x60; should be null by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: container&#x60; should always be &#x60;null&#x60; or a Node instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;contentSelector&#x60; should be null by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;linkSelector&#x60; should select links with class &quot;yui3-pjax&quot; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;navigateOnHash&#x60; should be false by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;scrollToTop&#x60; should be true by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;timeout&#x60; should default to 30000ms</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes and Properties: &#x60;titleSelector&#x60; should select the title tag by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: should attach events on init in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;error&#x60; event should fire on Ajax failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;error&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;load&#x60; event should fire on Ajax success</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;load&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event facade should contain the options passed to &#x60;navigate()&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should fire when a pjax link is clicked</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should not fire when a link is clicked with a button other than the left button</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should not fire when a modifier key is pressed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should not fire when a click element is not an anchor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should not fire when a link is clicked with a URL from another origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should not fire for a hash URL that resolves to the current page</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should fire for a hash-less URL that resolves to the current page</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Events: &#x60;navigate&#x60; event should fire for a hash URL that resolves to the current page when &#x60;navigateOnHash&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Methods: &#x60;navigate()&#x60; should load the specified URL and fire a &#x60;load&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.015</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Methods: &#x60;navigate()&#x60; should normalize the specified URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Methods: &#x60;navigate()&#x60; should throw an error when the specified URL is not of the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>General Behavior: Page title should be updated if the &#x60;titleSelector&#x60; matches an element</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>General Behavior: Host element content should be updated with page content when &#x60;contentSelector&#x60; is null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.024</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>General Behavior: Host element content should be updated with partial content when &#x60;contentSelector&#x60; selects a node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.127</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>General Behavior: Pending requests should be aborted in favor of new request</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.02</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:32:59 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
