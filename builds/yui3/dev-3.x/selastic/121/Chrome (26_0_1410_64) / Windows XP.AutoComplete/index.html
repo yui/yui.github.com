@@ -1,0 +1,1382 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Chrome (26_0_1410_64) / Windows XP.AutoComplete]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Chrome (26_0_1410_64) / Windows XP.AutoComplete]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Initializer should accept an inputNode</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: destructor should detach events</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Browser autocomplete should be off by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Browser autocomplete should be turned on when enabled</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Browser autocomplete should be settable after init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: inputNode should be writable only on init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: maxResults should enforce a maximum number of results</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: maxResults should do nothing if &lt;= 0</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: minQueryLength should enforce a minimum query length</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: minQueryLength should allow empty queries if set to 0</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: minQueryLength should prevent queries if negative</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: queryDelay should delay query events</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.038</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: _parseValue should return the rightmost token when using a queryDelimiter</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: requestTemplate should accept a custom template function</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: requestTemplate should generate a template function when set to a string</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: requestTemplate function should replace {query} with the URI-encoded query</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: &#x60;this&#x60; object in requestTemplate functions should be the AutoComplete instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultFilters should accept a function, array of functions, string, array of strings, or null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: result filters should receive the query and an array of result objects as parameters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultFormatter should accept a function or null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: result formatters should receive the query and an array of result objects as parameters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultHighlighter should accept a function, string, or null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: result highlighters should receive the query and an array of result objects as parameters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultListLocator should accept a function, string, or null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultListLocator should locate results</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: resultTextLocator should locate result text</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: _parseResponse should preserve duplicates in text when using resultTextLocator</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: value attribute should update the inputNode value and query attribute when set via the API, but should not fire a query event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: _functionValidator() should accept a function or null</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.027</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: clear event should fire when the query is cleared</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: clear event should fire when the value attribute is cleared via the API</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: clear event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: query event should fire when the value attribute is changed via the UI</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: query event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: results event should fire when a source returns results</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: results event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: sendRequest should provide a complete request object to source.sendRequest</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Array sources should return the full array regardless of query</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: DataSource sources should work</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Function sources should support synchronous return values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Function sources should support asynchronous return values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.018</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Object sources should work</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: sourceType should override source type detection for built-in types</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: &lt;select&gt; nodes should be turned into select source objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: A &lt;select&gt; result should be an object with convenient properties</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: XHR strings should be turned into IO source objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: JSONP strings should be turned into JSONP source objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: Y.JSONPRequest instances should be turned into JSONP source objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: YQL strings should be turned into YQL source objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: sourceType should override source type detection for extra types</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: _jsonpFormatter should correctly format URLs both with and without a requestTemplate set</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Base: requestTemplate should be appended to XHR source URLs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: charMatch() should match all characters in the query, in any order</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: charMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: charMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: charMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: phraseMatch() should match the complete query as a phrase</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: phraseMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: phraseMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: phraseMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: startsWith() should match the complete query at the start of a result</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: startsWith() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: startsWithCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: startsWithFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: subWordMatch() should match results where all words in the query - ignoring whitespace and punctuation - occur partially in the text</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: subWordMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: subWordMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: subWordMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: wordMatch() should match results that contain all words in the query in any order</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: wordMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: wordMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Filters: wordMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: charMatch() should highlight all characters in the query, in any order</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: charMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: charMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: charMatchFold() should highlight accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: phraseMatch() should highlight the complete query as a phrase</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: phraseMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: phraseMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: phraseMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: startsWith() should highlight the complete query at the start of a result</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: startsWith() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: startsWithCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: startsWithFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: subWordMatch() should highlight partial words in the query</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: subWordMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: subWordMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: subWordMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: wordMatch() should highlight complete words in the query</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: wordMatch() should be case-insensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: wordMatchCase() should be case-sensitive</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Highlighters: wordMatchFold() should match accent-folded characters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: List should render inside the same parent as the inputNode by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: List width should match the width of the inputNode by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: Explicit list widths should be supported</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: List should default to a sane width if the inputNode width is 0 or unknown</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: List should not appear automatically when attached to an inputNode with text</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: verify list markup</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: verify result item markup</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: activateFirstItem</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: activeItem</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: alwaysShowList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: circular</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: hoveredItem</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: tabSelect</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.046</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: test: visible</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: select event should fire when a result is selected</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: list events should be detached when the list is destroyed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: hide() should hide the list, except when alwaysShowList is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>List: _ariaSay() should insert text only, not HTML</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Plugin: inputNode.ac should be an instance of Y.Plugin.AutoComplete</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Plugin: inputNode.ac should extend Y.AutoCompleteList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Plugin: The plugin should render itself immediately</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:39:24 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+

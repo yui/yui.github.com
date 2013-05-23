@@ -1,0 +1,2342 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Chrome (27_0_1453_93) / Windows XP.Tree]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Chrome (27_0_1453_93) / Windows XP.Tree]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should work without a config object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor: &#x60;nodes&#x60; config property should support an array of node configs to add to the tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor: &#x60;nodes&#x60; config property should support an array of TreeNode.Node instances to add to the tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor: &#x60;rootNode&#x60; config property should support a custom root node config</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor: &#x60;rootNode&#x60; config property should support a custom Tree.Node instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor: should allow both &#x60;nodes&#x60; and &#x60;rootNode&#x60; to be specified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destructor should destroy the root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destructor should free references to allow garbage collection</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: _isYUITree should be true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: children property should be a reference to the rootNode&#x27;s children property</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: nodeClass property should allow the use of a custom node class</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: nodeClass property should allow specifying a class as a string</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: nodeExtensions property should mix extensions into the nodeClass at instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: appendNode() should append a node to the end of the specified parent node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: appendNode() should append an array of nodes to the end of the specified parent node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: appendNode() should adopt a node if it exists in another tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should destroy the root node and create a new one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should support a custom root node argument</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: createNode() should create a node and associate it with this tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: createNode() should adopt the specified node if it&#x27;s from another tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destroyNode() should destroy the specified node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destroyNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: emptyNode() should remove all children from the given node and return them</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: emptyNode() should destroy children if options.destroy is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: findNode() should return the first node for which the callback returns a truthy value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: findNode() should return &#x60;null&#x60; when it doesn&#x27;t find anything</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: findNode() should pass options along to traverseNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: findNode() should support a custom &#x60;this&#x60; object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: getNodeById() should return the node with the given id</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: getNodeById() should return &#x60;undefined&#x60; if the given id is not found</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should insert a node at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should insert an array of nodes at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should append if no index is specified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should adopt a node if it exists in another tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should remove the inserted node from its current parent if necessary</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prependNode() should prepend a node to the beginning of the specified parent node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prependNode() should prepend an array of nodes to the beginning of the specified parent node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prependNode() should adopt a node if it exists in another tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: removeNode() should remove the specified node from its parent</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: removeNode() should remove and destroy the specified node when options.destroy is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: size() should return the total number of nodes in the tree, including the root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: toJSON() should return a serializable object representing the tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: traverseNode() should traverse the specified node and its descendants in depth-first order</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: traverseNode() should use the specified &#x60;this&#x60; object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: traverseNode() should limit the maximum depth when &#x60;options.depth&#x60; is set</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: traverseNode() should stop traversing if the callback returns &#x60;Tree.STOP_TRAVERSAL&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: appendNode() should fire an &#x60;add&#x60; event with src &quot;append&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: appendNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should fire a &#x60;clear&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should not fire a &#x60;clear&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: clear() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destroyNode() should fire a &#x60;remove&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destroyNode() should not fire a &#x60;remove&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: destroyNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prependNode() should fire an &#x60;add&#x60; event with src &quot;prepend&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prependNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should fire an &#x60;add&#x60; event with src &quot;insert&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should fire an &#x60;add&#x60; event with a custom src</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insertNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: removeNode() should fire a &#x60;remove&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: removeNode() should not fire a &#x60;remove&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: removeNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;add&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;clear&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;remove&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should accept a Tree instance as the first argument</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should accept a config object as the second argument</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should mix arbitrary config properties into the instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should generate a unique id if one is not specified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: _isYUITreeNode should be true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: canHaveChildren should be undefined by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: canHaveChildren should be true if children are added at instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: children should be an empty array by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: data should be an empty object by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: id should be a unique guid by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: parent should be the parent node of this node, if any</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: state should be an empty object by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: tree should be the Tree that contains the node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: append() should wrap Tree#appendNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: empty() should wrap Tree#emptyNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: find() should wrap Tree#findNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: hasChildren() should return &#x60;true&#x60; if the node has children, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: index() should return the numerical index of this node within its parent node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: index() should return -1 if this node has no parent</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: indexOf() should return the numerical index of the given child node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: indexOf() should return -1 if the given node is not a direct child of this node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: insert() should wrap Tree#insertNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: isInTree() should return &#x60;true&#x60; if this node has been inserted into a tree, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: isRoot() should return &#x60;true&#x60; if this node is the root of a tree, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: next() should return the next sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: next() should return &#x60;undefined&#x60; if there is no next sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: next() should return &#x60;undefined&#x60; if the node is a root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: prepend() should wrap Tree#prependNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: previous() should return the previous sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: previous() should return &#x60;undefined&#x60; if there is no previous sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: previous() should return &#x60;undefined&#x60; if the node is a root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: remove() should wrap Tree#removeNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: remove() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: size() should return the total number of descendants contained within this node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: toJSON() should return a serializable object representing this node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: traverse() should wrap Tree#traverseNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: plugin instance should be available in the &#x60;lazy&#x60; namespace</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: constructor should accept a custom &#x60;load()&#x60; function in &#x60;config.load&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: default &#x60;load()&#x60; method should pass an error to the callback</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;error&#x60; event should fire when an error is passed to the &#x60;load()&#x60; callback</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;beforeLoad&#x60; event should fire just before the &#x60;load()&#x60; callback is called</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;beforeLoad&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: &#x60;load&#x60; event should fire after the &#x60;load()&#x60; callback is called without an error</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: node&#x27;s &#x60;state.loading&#x60; property should be true while loading</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: node&#x27;s &#x60;state.loading&#x60; property should be removed after load success or failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree: node&#x27;s &#x60;state.loaded&#x60; property should be true after successful load</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Labelable: label should be an empty string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Labelable: constructor should set the label if one is specified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Labelable: toJSON() should serialize labels</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should close the specified node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should open the specified node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpenNode() should open a closed node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpenNode() should close an open node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpenNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should fire a &#x60;close&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should not fire a &#x60;close&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should not fire a &#x60;close&#x60; event if the specified node can&#x27;t have children</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should not fire a &#x60;close&#x60; event if the specified node is already closed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: closeNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should fire an &#x60;open&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should not fire an &#x60;open&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should not fire an &#x60;open&#x60; event if the specified node can&#x27;t have children</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should not fire an &#x60;open&#x60; event if the specified node is already open</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: openNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpenNode() should not fire any events if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpenNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: &#x60;close&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: &#x60;open&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: close() should wrap Tree#closeNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: close() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: isOpen() should return &#x60;true&#x60; if this node is open, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: isOpen() should always return &#x60;true&#x60; for a root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: open() should wrap Tree#openNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: open() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpen() should wrap Tree#toggleOpenNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Openable: toggleOpen() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: destructor should detach all tree events</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: destructor should free references to allow garbage collection</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: multiSelect attribute should be false by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: enabling multiSelect should allow selecting multiple nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: all selected nodes should be unselected when the multiSelect attribute is changed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: getSelectedNodes() should return an array of selected nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should select the specified node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselect() should unselect all selected nodes in the tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselect() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should unselect the specified node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should fire a &#x60;select&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should not fire a &#x60;select&#x60; event if the specified node is already selected</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should not fire a &#x60;select&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selectNode() should pass along a &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should fire an &#x60;unselect&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should not fire an &#x60;unselect&#x60; event if the specified node is not selected</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should not fire an &#x60;unselect&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselectNode() should pass along a &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: &#x60;select&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: &#x60;unselect&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: should handle a node being added in a selected state</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selection should be cleared when the tree is cleared</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: selection should be updated when a selected node is removed from the tree</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: isSelected() should return &#x60;true&#x60; if this node is selected, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: select() should wrap Tree#selectNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: select() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselect() should wrap Tree#unselectNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Selectable: unselect() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: initializer should accept a &#x60;sortComparator&#x60; config option</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: initializer should accept a &#x60;sortReverse&#x60; config option</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortReverse should default to &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortComparator() should return the node&#x27;s index by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should sort the given node&#x27;s children</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should support a &#x60;sortComparator&#x60; option</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should support a &#x60;sortReverse&#x60; option</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should fire a &#x60;sort&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sortNode() should not fire an event when &#x60;options.silent&#x60; is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: nodes should be sorted in insertion order by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: nodes should be sorted in descending insertion order if sortReverse is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: nodes should be sorted at insertion time</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: nodes should be sorted in descending order at insertion time if sortReverse is true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: nodes should not be sorted on insert if inserted via append() or prepend()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: node-specific sortComparator should be used if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: node-specific sortReverse should be used if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sort() should wrap Tree#sortNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Tree.Sortable: sort() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:39:24 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
