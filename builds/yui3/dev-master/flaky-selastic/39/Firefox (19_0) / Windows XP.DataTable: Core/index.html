@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Firefox (19_0) / Windows XP.DataTable: Core]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Firefox (19_0) / Windows XP.DataTable: Core]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Class extension: testClassExtension</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.019</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getRecord: test getRecord(index)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getRecord: test getRecord(id)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getRecord: test getRecord(clientId)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getColumn: test getColumn(key)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getColumn: test getColumn(name)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getColumn: test getColumn(index)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getColumn: test getColumn([ index, index ])</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getColumn: test getColumn(column)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from data array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from data ModelList&#x27;s model class</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from recordType</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from data array after empty instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from data ModelList after empty instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: columns should default from recordType after empty instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: string columns should be converted to objects</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: test columnset pass through</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: duplicate keys should have unique column ids</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: child columns should get _parent property pointing to their parent</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: set(&#x27;columns&#x27;, VALUE) should update getColumn(NAME) map</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: get(&#x27;columns.KEY&#x27;) should return column object based on _id</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>columns attribute: test col.field alias for col.name</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: test array as data value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: test ModelList passed as data value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: set(&#x27;data&#x27;, array) should update the existing ModelList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: set(&#x27;data&#x27;, modelList) should replace the existing ModelList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: set(&#x27;data&#x27;, garbage) should do nothing</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: set(&#x27;data&#x27;, modelList) should fire a dataChange</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>data attribute: test recordset pass through</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>recordType attribute: test instantiation with recordType: object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>recordType attribute: test instantiation with recordType: array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>recordType attribute: test instantiation with recordType: Model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>recordType attribute: get(&#x27;recordType&#x27;) should return the data modelList.model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>recordType attribute: recordType should default from keys of first object in data array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:25:01 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
