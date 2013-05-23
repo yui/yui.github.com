@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Firefox (19_0) / Windows XP.Slider]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Firefox (19_0) / Windows XP.Slider]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test default construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test SliderBase construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test render(selector)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.053</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test render( node )</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.035</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test render: selector attrib in constructor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.029</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test render: node attrib in constructor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.028</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test render off DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test destroy() before render</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test destroy() after render off DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Lifecycle: test destroy() after render to DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: test getValue() and setValue(v) before render</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: test getValue() and setValue(v) after render() to hidden container</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: test getValue() and setValue(v) after render() to DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: setValue(v) then render() should position thumb</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: setValue(v) after render() should move the thumb</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>API: setValue(v) when hidden should still move the thumb</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test axis</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: axis should be writeOnce</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: axis should only accept &#x27;x&#x27;, &#x27;X&#x27;, &#x27;y&#x27;, and &#x27;Y&#x27;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.021</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test length</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.031</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: thumbUrl should default at render()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: thumbUrl should default to sam skin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: thumbUrl should default from the current skin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test clickableRail</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.021</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test min</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test max</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: setting the value outside the min or max should constrain it</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: setting the min or max should update the value if necessary</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: instantiating with disabled: true should lock the thumb</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Attributes: test ARIA attributes upon instantiation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Mouse: clicking on the rail should move the thumb</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Keyboard: test keyboard input</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Keyboard: test focus on thumb by click</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.017</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Keyboard: test keyboard input and resultant value change, when Slider length is less than max - min</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Keyboard: test ARIA attributes while values change by keyboard input</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:09:58 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
