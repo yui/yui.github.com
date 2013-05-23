@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [scrollable attribute]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [scrollable attribute]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>test scrollable values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test set(&#x27;scrollable&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>render() with &#x27;scrollable&#x27; unset should not include scrolling UI</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.018</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>render() with scrollable set, but neither width/height should not render scroll UI</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.021</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>render() with scrollable: x + width should render x scroller</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>render() with scrollable: y + height should render y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>render() with scrollable: xy + height, width should render x and y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.018</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;x&#x27;) after render() should add x scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;y&#x27;) after render() should add y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;xy&#x27;) after render() should add y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;x&#x27;) from &#x27;xy&#x27; should remove y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;y&#x27;) from &#x27;xy&#x27; should remove x scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, false) from &#x27;x&#x27; should remove x scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, false) from &#x27;y&#x27; should remove y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, false) from &#x27;xy&#x27; should remove x and y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;x&#x27;) from &#x27;y&#x27; should add x scroll DOM and remove y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;y&#x27;) from &#x27;x&#x27; should add y scroll DOM and remove x scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>set(&#x27;scrollable&#x27;, &#x27;xy&#x27;) from &#x27;y&#x27; should add x scroll DOM outside y scroll DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.023</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Thu May 23 2013 23:29:14 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
