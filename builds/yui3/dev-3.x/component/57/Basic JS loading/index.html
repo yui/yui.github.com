@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Basic JS loading]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Basic JS loading]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>test: single script, success</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.018</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: single script, failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: single script success, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: single script failure, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: multiple scripts, success</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: multiple scripts, one failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: multiple scripts, success, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: multiple scripts, failure, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async multiple scripts, success</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async multiple scripts, success, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async multiple script, failure, end</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: insertBefore, single</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: insertBefore, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.02</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async, insertBefore, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: charset, single</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: charset, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async, charset, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: attributes, single</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: attributes, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.03</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async, attributes, multiple</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>scripts should be automatically purged after 20 nodes by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.054</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: purgethreshold</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test: async multiple script, failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Fri May 24 2013 16:22:57 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
