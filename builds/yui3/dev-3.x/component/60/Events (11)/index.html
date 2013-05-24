@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>should attach events on init in HTML5 browsers</td>
+                        <td>appendNode() should fire an &#x60;add&#x60; event with src &quot;append&quot;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,19 +30,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;error&#x60; event should fire on Ajax failure</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.016</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;error&#x60; event should be preventable</td>
+                        <td>appendNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,19 +42,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;load&#x60; event should fire on Ajax success</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.046</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;load&#x60; event should be preventable</td>
+                        <td>clear() should fire a &#x60;clear&#x60; event</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +54,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event facade should contain the options passed to &#x60;navigate()&#x60;</td>
+                        <td>clear() should not fire a &#x60;clear&#x60; event if options.silent is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,19 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should fire when a pjax link is clicked</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;navigate&#x60; event should be preventable</td>
+                        <td>clear() should pass along a custom &#x60;src&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -114,7 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should not fire when a link is clicked with a button other than the left button</td>
+                        <td>destroyNode() should fire a &#x60;remove&#x60; event</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,7 +90,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should not fire when a modifier key is pressed</td>
+                        <td>destroyNode() should not fire a &#x60;remove&#x60; event if options.silent is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -138,68 +102,152 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should not fire when a click element is not an anchor</td>
+                        <td>destroyNode() should pass along a custom &#x60;src&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should not fire when a link is clicked with a URL from another origin</td>
+                        <td>prependNode() should fire an &#x60;add&#x60; event with src &quot;prepend&quot;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should not fire for a hash URL that resolves to the current page</td>
+                        <td>prependNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should fire for a hash-less URL that resolves to the current page</td>
+                        <td>insertNode() should fire an &#x60;add&#x60; event with src &quot;insert&quot;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigate&#x60; event should fire for a hash URL that resolves to the current page when &#x60;navigateOnHash&#x60; is &#x60;true&#x60;</td>
+                        <td>insertNode() should fire an &#x60;add&#x60; event with a custom src</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.003</td>
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>insertNode() should not fire an &#x60;add&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeNode() should fire a &#x60;remove&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeNode() should not fire a &#x60;remove&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeNode() should pass along a custom &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;add&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;clear&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;remove&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

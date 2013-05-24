@@ -18,7 +18,19 @@
                     </tr>
                     
                     <tr>
-                        <td>generateClientId() should generate a unique client id</td>
+                        <td>add() should add everything as objects, not models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>add() should generate a clientId for added objects if necessary</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,79 +42,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getAsHTML() should return an HTML-escaped attribute value</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getAsHTML() should return an empty string for null attribute values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getAsURL() should return a URL-encoded attribute value</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getAsURL() should return an empty string for null attribute values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>isModified() should return true if the model is new</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>isModified() should return true if the model has changed since it was last saved</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>isNew() should return true if the model is new</td>
+                        <td>free() should free the given model or model index</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -114,79 +54,7 @@
                     </tr>
                     
                     <tr>
-                        <td>load() should delegate to sync()</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>load() should reset this.changed when loading succeeds</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>load() should be chainable and should call the callback if one was provided</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>parse() should parse a JSON string and return an object</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>parse() should not try to parse non-strings</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>save() should delegate to sync()</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>save() should reset this.changed when saving succeeds</td>
+                        <td>free() with no args should free all models</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -198,7 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>save() should be chainable and should call the callback if one was provided</td>
+                        <td>get() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -210,19 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>set() should set the value of a single attribute</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>setAttrs() should set the values of multiple attributes</td>
+                        <td>getAsHTML() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -234,7 +90,7 @@
                     </tr>
                     
                     <tr>
-                        <td>setAttrs() should not modify the passed-in &#x60;options&#x60; object</td>
+                        <td>getAsURL() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -246,7 +102,7 @@
                     </tr>
                     
                     <tr>
-                        <td>sync() should just call the supplied callback by default</td>
+                        <td>indexOf() should find objects in the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -258,7 +114,7 @@
                     </tr>
                     
                     <tr>
-                        <td>toJSON() should return a copy of the model&#x27;s attributes, minus excluded ones</td>
+                        <td>indexOf() should find revived models in the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -270,7 +126,7 @@
                     </tr>
                     
                     <tr>
-                        <td>undo() should revert the previous change to the model</td>
+                        <td>remove() should accept both objects and models</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -282,43 +138,31 @@
                     </tr>
                     
                     <tr>
-                        <td>undo() should revert only the specified attributes when attributes are specified</td>
+                        <td>remove() should maintain indices for revived models</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.018</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>undo() should pass options to setAttrs()</td>
+                        <td>reset() should accept an array of objects/models or a ModelList</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.004</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>undo() should do nothing when there is no previous change to revert</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>undo() should only fire one change when a custom id attribute changes</td>
+                        <td>revive() should revive an index into a model</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -330,19 +174,7 @@
                     </tr>
                     
                     <tr>
-                        <td>validate() should only be called on save()</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>a validation failure should abort a save() call</td>
+                        <td>revive() should revive an object into a model</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -354,7 +186,55 @@
                     </tr>
                     
                     <tr>
-                        <td>validate() should be backwards compatible with the 3.4.x synchronous style</td>
+                        <td>revive() with no args should revive all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>revive() should preserve clientIds</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Changing an attribute on a revived model should update the original object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_isInList() should indicate whether an item is in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_modelToObject() should convert a model instance to a plain object</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -367,7 +247,7 @@
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

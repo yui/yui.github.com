@@ -18,31 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>clear event should fire when the query is cleared</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.003</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>clear event should fire when the value attribute is cleared via the API</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.009</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>clear event should be preventable</td>
+                        <td>&#x60;change&#x60; event should contain coalesced attribute changes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +30,7 @@
                     </tr>
                     
                     <tr>
-                        <td>query event should fire when the value attribute is changed via the UI</td>
+                        <td>&#x60;change&#x60; event should not fire when the _silent_ option is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,19 +42,19 @@
                     </tr>
                     
                     <tr>
-                        <td>query event should be preventable</td>
+                        <td>&#x60;change&#x60; event facade should contain options passed to set()/setAttrs()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.003</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>results event should fire when a source returns results</td>
+                        <td>&#x60;error&#x60; event should fire when validation fails</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,20 +66,68 @@
                     </tr>
                     
                     <tr>
-                        <td>results event should be preventable</td>
+                        <td>&#x60;error&#x60; event should fire when parsing fails</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.004</td>
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should fire when a load operation fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should fire when a save operation fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;load&#x60; event should fire after a successful load operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;save&#x60; event should fire after a successful save operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

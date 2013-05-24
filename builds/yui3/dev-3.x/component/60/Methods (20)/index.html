@@ -18,7 +18,19 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should always return a new &#x60;Y.View&#x60; instance</td>
+                        <td>add() should add a model to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>add() should add a model to the list at the specified index</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,7 +42,31 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should return a new instance of a named, registered view</td>
+                        <td>add() should add an array of models to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>add() should add an array of models to the list at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>add() should add models in another ModelList to the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +78,19 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new &#x60;Y.View&#x60; instance</td>
+                        <td>add() should add models in another ModelList to the list at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>add() should support models created in other windows</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,19 +102,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new instance of a named, registered view</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a named, registered view</td>
+                        <td>comparator() should be undefined by default</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +114,19 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a view constructed by &#x60;createView()&#x60;</td>
+                        <td>models should be added in the proper position based on the comparator</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>create() should create or update a model, then add it to the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,7 +138,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should append the &#x60;viewContainer&#x60; into the &#x60;container&#x60;</td>
+                        <td>create() should call the callback if one is provided</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -102,7 +150,79 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; already containing the &#x60;viewContainer</td>
+                        <td>create() should pass an error to the callback if one occurs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>create() should support models created in other windows</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>each() should iterate over the models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>each() should accept an optional context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>each() should iterate over a copy of the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>filter() should filter the list and return an array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>filter() should return an empty array if the callback never returns a truthy value</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -114,7 +234,19 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; and &#x60;viewContainer&#x60; being the same node</td>
+                        <td>filter() should return a new ModelList when options.asList is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>get() should return an array of attribute values from all models in the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,7 +258,415 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should append the &#x60;activeView&#x60; to the &#x60;viewContainer&#x60;</td>
+                        <td>get() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getAsHTML() should return an array of HTML-escaped attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getAsHTML() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getAsURL() should return an array of URL-encoded attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getAsURL() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getByClientId() should look up a model by its clientId</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getById() should look up a model by its id</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getById() should work with numeric ids</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getById() should work with custom ids</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>invoke() should call the named method on every model in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>item() should return the model at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>load() should delegate to sync()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>load() should be chainable and should call the callback if one was provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>load() should reset the list with the loaded items</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>load() callback should receive an error when a sync error occurs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>map() should execute a function on every model in the list and return an array of return values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>parse() should parse a JSON string and return an object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>parse() should not try to parse non-strings</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should remove a single model from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should remove a single model from the list by index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should remove an array of models from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should remove an array of models from the list by index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should remove models in another ModelList from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() should replace all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() should sort the new models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() with no args should clear the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() should add models in another ModelList to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() should support models created in other windows</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>some() should iterate over the models in the list and stop when the callback returns &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>some() should accept an optional context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>some() should iterate over a copy of the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>sort() should re-sort the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>sync() should just call the supplied callback by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>toArray() should return an array containing all the models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>toJSON() should return an array of model hashes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -139,7 +679,7 @@
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

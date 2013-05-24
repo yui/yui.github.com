@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() should return an empty string by default</td>
+                        <td>getPath() should return the current location &#x60;pathname&#x60; when no hash is set in all browsers</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,103 +30,19 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model list should return the &#x60;root&#x60; of its model by default</td>
+                        <td>getPath() should return the &#x60;pathname&#x60; in HTML5 browsers and otherwise return the hash path</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.009</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model list should return its &#x60;url&#x60; if defined</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() of a new model should return its &#x60;root&#x60; if defined</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; when the &#x60;action&#x60; is &quot;create&quot;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; by default</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; and normalize slashes</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() of a model should return its &#x60;url&#x60; if defined</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with &#x60;options&#x60; values</td>
+                        <td>getPath() should return the hash path in non HTML5 browsers</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -138,43 +54,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute and &#x60;options&#x60; values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should URL-encode the &#x60;url&#x60; substitution values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should not substitute Arrays, Objects, or Boolean values into the &#x60;url&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>parse() should receive the full Y.io response object when &#x60;parseIOResponse is falsy</td>
+                        <td>route() should add a route</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -186,19 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>parseIOResponse() should alter the response passed to &#x60;parse()&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>serialize() should return a JSON string by default</td>
+                        <td>match() should return an array of routes that match the given path</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -210,20 +78,248 @@
                     </tr>
                     
                     <tr>
-                        <td>serialize() should be passed the &#x60;sync()&#x60; &#x60;action&#x60;</td>
+                        <td>hasRoute() should return &#x60;true&#x60; if one or more routes match the given path</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>hasRoute() should support full URLs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>hasRoute() should always return &#x60;false&#x60; for URLs with different origins</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>dispatch() should dispatch to the first route that matches the current URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.033</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>dispatch() should upgrade hash URLs to HTML5 URLs in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.041</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeRoot() should remove the root URL from a given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeRoot() should strip the origin (&quot;http://foo.com&quot;) portion of the URL, if any</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should replace the current history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should be able to be called with no args using html5</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should be able to be called with no args using not html5</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should create a new history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>consecutive save() calls should dispatch to the correct routes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.024</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should not include the &#x60;root&#x60; in the hash path if it is already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.02</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should include the &#x60;root&#x60; in the hash path if it is not already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should dispatch in non HTML5 browsers even when the &#x60;hash&#x60; does not change</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.019</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_joinURL() should normalize &quot;/&quot; separators</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_dispatch() should pass &#x60;src&#x60; through to request object passed to route handlers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_getRegex() should return regexes that do not match too much</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

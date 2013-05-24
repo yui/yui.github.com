@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>initializer should accept a &#x60;sortComparator&#x60; config option</td>
+                        <td>destroy() should destroy the model instance</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,20 +30,68 @@
                     </tr>
                     
                     <tr>
-                        <td>initializer should accept a &#x60;sortReverse&#x60; config option</td>
+                        <td>destroy() should call a callback if provided as the only arg</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should call a callback if provided as the second arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should delete the model if the &#x60;remove&#x60; option is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should remove the model from all lists</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should not remove the model lists when sync has an error</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

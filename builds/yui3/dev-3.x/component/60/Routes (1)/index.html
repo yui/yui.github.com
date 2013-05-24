@@ -18,224 +18,68 @@
                     </tr>
                     
                     <tr>
-                        <td>routes should be called in the context of the router</td>
+                        <td>&#x60;Y.App.Content.route&#x60; should load HTML content from the server and set the &#x60;activeView&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.022</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>routes should receive a request object, response object, and &#x60;next&#x60; function as params</td>
+                        <td>&#x60;Y.App.Content.route&#x60; should load text content from the server and set the &#x60;activeView&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.048</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>routes should support multiple callback functions</td>
+                        <td>&#x60;Y.App.Content.route&#x60; should default the document &#x60;title&#x60; to &#x60;&lt;title&gt;&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.048</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>routes should support an array of callback functions</td>
+                        <td>&#x60;loadContent()&#x60; middleware should put &#x60;ioURL&#x60; on the &#x60;req&#x60; object</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.049</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>routes should support an array of callback function string names</td>
+                        <td>&#x60;loadContent()&#x60; middleware should put &#x60;content&#x60; and &#x60;ioResponse&#x60; on the &#x60;res&#x60; object</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>routes should support nested arrays of mixed function and string callbacks</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>route middleware should be able to skip to the next route</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>request object should contain captured route parameters</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>route parameters should be decoded</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>request object should contain a &#x60;pendingRoutes&#x60; property</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>calling &#x60;res()&#x60; should have the same result as calling &#x60;next()&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>calling &#x60;next()&#x60; should pass control to the next matching route</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&quot;*&quot; should be a catch-all route</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>routes containing a &quot;*&quot; should match the segments which follow it</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>multiple routers should be able to coexist and have duplicate route handlers</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.203</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>multiple nested routers should be able to coexist and duplicate route handlers</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.252</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>multiple nested non-HTML5 routers should be able to coexist and duplicate route handlers</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.261</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>multiple routers should respond to history events after one router is destroyed</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.203</td>
+                        <td>0.048</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 16 2013 16:31:14 GMT+0000 (UTC)</center>
+            <center>Generated: Fri May 24 2013 17:25:19 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
