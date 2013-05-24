@@ -1,0 +1,4418 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Chrome (26_0_1410_64) / Windows XP.App]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Chrome (26_0_1410_64) / Windows XP.App]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;container&#x60; should default to the &#x60;&lt;body&gt;&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A specified &#x60;container&#x60; should be used during construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;viewContainer&#x60; should be a new &#x60;&lt;div/&gt;&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A specified &#x60;viewContainer&#x60; should be used during construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;activeView&#x60; should be undefined by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;activeView&#x60; should not be overrideable in the constructor config</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;linkSelector&#x60; should be &#x60;&quot;a&quot;&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;serverRouting&#x60; should default to undefined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;serverRouting&#x60; should be overrideable via the constructor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;views&#x60; property should be empty by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;views&#x60; should be a copy of the &#x60;views&#x60; object on the prototype</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Destroying an app with &#x60;{remove: true}&#x60; should destroy its &#x60;container&#x60; and &#x60;viewContainer&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Destroying an app with &#x60;{remove: true}&#x60; with the &#x60;&lt;body&gt;&#x60; for a container should only remove its CSS classes, not the body from the DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;activeView&#x60; should be read-only</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;activeView&#x60; should be modifiable via the &#x60;showView()&#x60; method</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;container&#x60; and &#x60;viewContainer&#x60; should be able to be the same node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;container&#x60; should be stamped with the App CSS class</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;viewContainer&#x60; should be stamped with the App Views CSS class when the app is rendered</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;viewContainer&#x60; should only be settable during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;Y.App.serverRouting&#x60; should be &#x60;undefined&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;serverRouting&#x60; should default to the value of &#x60;Y.App.serverRouting&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;serverRouting&#x60; should only be settable during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;serverRouting&#x60; should only be settable with a user-specified value during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;false&#x60; should force &#x60;html5&#x60; to default to &#x60;false&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;false&#x60; should force &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;true&#x60; should allow &#x60;html5&#x60; to default to &#x60;true&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;true&#x60; should allow &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;undefined&#x60; should allow &#x60;html5&#x60; to default to &#x60;true&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Setting &#x60;serverRouting&#x60; to &#x60;undefined&#x60; should allow &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;html5&#x60; should be overridable on construction even when &#x60;serverRouting&#x60; is false</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate&#x60; should fire when &#x60;serverRouting&#x60; is falsy, even when &#x60;html5&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.207</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate&#x60; event should fire when a link is clicked</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;createView()&#x60; should always return a new &#x60;Y.View&#x60; instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;createView()&#x60; should return a new instance of a named, registered view</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new &#x60;Y.View&#x60; instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new instance of a named, registered view</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;getViewInfo()&#x60; should return the metadata for a named, registered view</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;getViewInfo()&#x60; should return the metadata for a view constructed by &#x60;createView()&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;render()&#x60; should append the &#x60;viewContainer&#x60; into the &#x60;container&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;render()&#x60; should properly handle the &#x60;container&#x60; already containing the &#x60;viewContainer</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;render()&#x60; should properly handle the &#x60;container&#x60; and &#x60;viewContainer&#x60; being the same node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;render()&#x60; should append the &#x60;activeView&#x60; to the &#x60;viewContainer&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A registered view with falsy &#x60;type&#x60; should default to &#x60;Y.View&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A registered view with a function &#x60;type&#x60; should return an instance of that function</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A registered view with a string &#x60;type&#x60; should look on the &#x60;Y&#x60; object for the constructor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A View instance should be preserved when registered with &#x60;preserve&#x60; as &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A view registered with a specified &#x60;instance&#x60; should be preserved when &#x60;preserve&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A View instance should not be preserved when registered with &#x60;preserve&#x60; as &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A registered view should not be preserved by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Parent/child view relationships should be determinable from the &#x60;views&#x60; metadata</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: Parent/child view relationships should be determinable from view instances</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;Y.App&#x60; subclasses should be able to specify view metadata on the &#x60;prototype&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: The &#x60;views&#x60; metadata on the &#x60;prototype&#x60; should be merged with the specified &#x60;views&#x60; during construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should set the specified view instance or name as the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should construct a registered view instance with the specified &#x60;config&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should accept a &#x60;null&#x60; &#x60;view&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should prepend the new &#x60;activeView&#x60; when &#x60;options.prepend&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; when &#x60;options.update&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should not update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; when &#x60;options.update&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should not update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should render a newly-created &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should render an existing &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should not render a newly-created &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should not render an existing &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should render a newly-created &#x60;view&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should not render an existing &#x60;view&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;options&#x60; passed to &#x60;showView()&#x60; should be mixed into the &#x60;activeViewChange&#x60; event facade</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should accept a &#x60;callback&#x60; as either the third or fourth param</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should call the specified &#x60;callback&#x60; with &#x60;this&#x60; context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should pass the new &#x60;activeView&#x60; to the &#x60;callback&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;showView()&#x60; should call the specified &#x60;callback&#x60; even when the &#x60;activeView&#x60; did not change</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;activeViewChange&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: An &#x60;activeView&#x60; should bubble events to the app</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: The previous &#x60;activeView&#x60; should no longer bubble events to the app</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A preserved view should not be destroyed when its no longer the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: A non preserved view should be destroyed when its no longer the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;_upgradeURL()&#x60; should upgrade a path-like hash-based URL to a full URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;_upgradeURL()&#x60; should not upgrade a hash-based URL which is not path-like</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;_upgradeURL()&#x60; should strip any hash-prefix from the hash-based URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;_upgradeURL()&#x60; should not upgrade URLs of a different origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate()&#x60; should upgrade hash-based URLs when &#x60;serverRouting&#x60; is falsy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate()&#x60; should upgrade hash-based URLs when &#x60;serverRouting&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate()&#x60; should force the firing of the &#x60;navigate&#x60; event when &#x60;serverRouting&#x60; is falsy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate()&#x60; should replace the history entry when the new and current URLs are the &quot;same&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;navigate()&#x60; should not override user-specified values for &#x60;force&#x60; and &#x60;replace&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Base: &#x60;_save()&#x60; should throw an error when the specified URL is not of the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: Y.App.Content.route should be a stack of middleware</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should set the &#x60;activeView&#x60; of an app based on the specified &#x60;content&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should accept an HTMLElement, String, or Node as the content</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should use the only child of a document fragment as the view &#x60;container&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should not use the only text node child of a document fragment as the view &#x60;container&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should wrap the children nodes of a document fragment with the view &#x60;container&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should accept a &#x60;callback&#x60; as either the second or third argument</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should create an instance of the specified &#x60;view&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent() should not render the view by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should use the &#x60;contentTemplate&#x60; of the view when a document fragment has multiple children</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showView()&#x60; should apply the &#x60;options.view.config&#x60; to the view</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;showContent()&#x60; should _always_ use &#x60;content&#x60; as the view &#x60;container&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;Y.App.Content.route&#x60; should load HTML content from the server and set the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.069</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;Y.App.Content.route&#x60; should load text content from the server and set the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.05</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;Y.App.Content.route&#x60; should default the document &#x60;title&#x60; to &#x60;&lt;title&gt;&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;loadContent()&#x60; middleware should put &#x60;ioURL&#x60; on the &#x60;req&#x60; object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.083</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>App Content: &#x60;loadContent()&#x60; middleware should put &#x60;content&#x60; and &#x60;ioResponse&#x60; on the &#x60;res&#x60; object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.041</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: destructor should detach all revived models from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: add() should add everything as objects, not models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: add() should generate a clientId for added objects if necessary</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: free() should free the given model or model index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: free() with no args should free all models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: get() should get properties, not attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: getAsHTML() should get properties, not attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: getAsURL() should get properties, not attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: indexOf() should find objects in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: indexOf() should find revived models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: remove() should accept both objects and models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: remove() should maintain indices for revived models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: reset() should accept an array of objects/models or a ModelList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: revive() should revive an index into a model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: revive() should revive an object into a model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: revive() with no args should revive all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: revive() should preserve clientIds</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: Changing an attribute on a revived model should update the original object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: _isInList() should indicate whether an item is in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>LazyModelList: _modelToObject() should convert a model instance to a plain object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should destroy the model instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should call a callback if provided as the only arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should call a callback if provided as the second arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should delete the model if the &#x60;remove&#x60; option is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should remove the model from all lists</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: destroy() should not remove the model lists when sync has an error</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: Attributes should be settable at instantiation time</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: Models should allow ad-hoc attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: Custom id attribute should be settable at instantiation time</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;_isYUIModel&#x60; property should be true</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;id&#x60; attribute should be an alias for the custom id attribute</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;changed&#x60; property should be a hash of attributes that have changed since last save() or load()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: clientId attribute should be automatically generated</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;lastChange&#x60; property should contain attributes that changed in the last &#x60;change&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;lists&#x60; property should be an array of ModelList instances that contain this model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: Resetting the custom id attribute should reset &#x60;id&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: A custom id attribute should not be set when &#x60;id&#x60; fails validation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;id&#x60; should not be set when the custom id attribute fails validation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: A custom id attribute should be same as what is returned from &#x60;id&#x60; setter</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: generateClientId() should generate a unique client id</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: getAsHTML() should return an HTML-escaped attribute value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: getAsHTML() should return an empty string for null attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: getAsURL() should return a URL-encoded attribute value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: getAsURL() should return an empty string for null attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: isModified() should return true if the model is new</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: isModified() should return true if the model has changed since it was last saved</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: isNew() should return true if the model is new</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: load() should delegate to sync()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: load() should reset this.changed when loading succeeds</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: load() should be chainable and should call the callback if one was provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: parse() should parse a JSON string and return an object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: parse() should not try to parse non-strings</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: save() should delegate to sync()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: save() should reset this.changed when saving succeeds</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: save() should be chainable and should call the callback if one was provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: set() should set the value of a single attribute</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: setAttrs() should set the values of multiple attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: setAttrs() should not modify the passed-in &#x60;options&#x60; object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: sync() should just call the supplied callback by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: toJSON() should return a copy of the model&#x27;s attributes, minus excluded ones</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: undo() should revert the previous change to the model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: undo() should revert only the specified attributes when attributes are specified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: undo() should pass options to setAttrs()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: undo() should do nothing when there is no previous change to revert</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: undo() should only fire one change when a custom id attribute changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: validate() should only be called on save()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: a validation failure should abort a save() call</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: validate() should be backwards compatible with the 3.4.x synchronous style</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;change&#x60; event should contain coalesced attribute changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;change&#x60; event should not fire when the _silent_ option is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;change&#x60; event facade should contain options passed to set()/setAttrs()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;error&#x60; event should fire when validation fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;error&#x60; event should fire when parsing fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;error&#x60; event should fire when a load operation fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;error&#x60; event should fire when a save operation fails</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;load&#x60; event should fire after a successful load operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.005</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Model: &#x60;save&#x60; event should fire after a successful save operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: constructor: should add a model instance, array of model instances, or ModelList instance to the list when passed in the &#x60;items&#x60; config property</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: destructor should detach all models from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: ModelList instances should have an &#x60;_isYUIModelList&#x60; property</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: ModelList instances should have a &#x60;model&#x60; property that defaults to Y.Model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;model&#x60; property should be customizable on init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;model&#x60; property should evaluate a string to a namespaced class on &#x60;Y&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;model&#x60; property should support deeply-nested names</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add a model to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add a model to the list at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add an array of models to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add an array of models to the list at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add models in another ModelList to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should add models in another ModelList to the list at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: add() should support models created in other windows</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: comparator() should be undefined by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: models should be added in the proper position based on the comparator</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: create() should create or update a model, then add it to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: create() should call the callback if one is provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: create() should pass an error to the callback if one occurs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: create() should support models created in other windows</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: each() should iterate over the models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: each() should accept an optional context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: each() should iterate over a copy of the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: filter() should filter the list and return an array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: filter() should return an empty array if the callback never returns a truthy value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: filter() should return a new ModelList when options.asList is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: get() should return an array of attribute values from all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: get() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getAsHTML() should return an array of HTML-escaped attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getAsHTML() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getAsURL() should return an array of URL-encoded attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getAsURL() should return a list attribute if there is one</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getByClientId() should look up a model by its clientId</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getById() should look up a model by its id</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getById() should work with numeric ids</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: getById() should work with custom ids</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: invoke() should call the named method on every model in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: item() should return the model at the specified index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: load() should delegate to sync()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: load() should be chainable and should call the callback if one was provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: load() should reset the list with the loaded items</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: load() callback should receive an error when a sync error occurs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: map() should execute a function on every model in the list and return an array of return values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: parse() should parse a JSON string and return an object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: parse() should not try to parse non-strings</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: remove() should remove a single model from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: remove() should remove a single model from the list by index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: remove() should remove an array of models from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: remove() should remove an array of models from the list by index</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: remove() should remove models in another ModelList from the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: reset() should replace all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: reset() should sort the new models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: reset() with no args should clear the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: reset() should add models in another ModelList to the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: reset() should support models created in other windows</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: some() should iterate over the models in the list and stop when the callback returns &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: some() should accept an optional context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: some() should iterate over a copy of the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: sort() should re-sort the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: sync() should just call the supplied callback by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: toArray() should return an array containing all the models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: toJSON() should return an array of model hashes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;add&#x60; event should fire when a model is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;add&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;add&#x60; event should not fire when a model is added silently</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;change&#x60; event should bubble up from models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;create&#x60; event should fire when a model is created</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;create&#x60; event should receive options passed to the create() method</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;error&#x60; event should bubble up from models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.017</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;error&#x60; event should fire when a model with a duplicate clientId is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;error&#x60; event should fire when a model with a duplicate id is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;error&#x60; event should fire when a model that isn&#x27;t in the list is removed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;error&#x60; event should fire when a sync layer response can&#x27;t be parsed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;load&#x60; event should fire after a successful load operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;reset&#x60; event should fire when the list is reset or sorted</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;reset&#x60; event facade should contain sorted models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;reset&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;reset&#x60; event should not fire when the list is reset silently</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;reset&#x60; event should allow the caller to override the &#x60;src&#x60; property on the event facade</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;remove&#x60; event should fire when a model is removed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;remove&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: &#x60;remove&#x60; event should not fire when a model is removed silently</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: list should update its id map when a model id changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelList: list should ignore id changes for models not in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: initializer should set the &#x60;root&#x60; property on the instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: initializer should set the &#x60;url&#x60; property on the instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: &#x60;root&#x60; property should be an empty string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: &#x60;url&#x60; property should be an empty string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: Static &#x60;CSRF_TOKEN&#x60; should default to the value of &#x60;YUI.Env.CSRF_TOKEN&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should return an empty string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model list should return the &#x60;root&#x60; of its model by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model list should return its &#x60;url&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a new model should return its &#x60;root&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model should return its &#x60;root&#x60; when the &#x60;action&#x60; is &quot;create&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; and normalize slashes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() of a model should return its &#x60;url&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should substitute tokenized &#x60;url&#x60;s with attribute values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should substitute tokenized &#x60;url&#x60;s with &#x60;options&#x60; values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should substitute tokenized &#x60;url&#x60;s with attribute and &#x60;options&#x60; values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should URL-encode the &#x60;url&#x60; substitution values</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: getURL() should not substitute Arrays, Objects, or Boolean values into the &#x60;url&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: parse() should receive the full Y.io response object when &#x60;parseIOResponse is falsy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: parseIOResponse() should alter the response passed to &#x60;parse()&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: serialize() should return a JSON string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: serialize() should be passed the &#x60;sync()&#x60; &#x60;action&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: load() should perform a GET XHR the &#x60;url&#x60; of the model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: load() should perform a GET XHR the &#x60;root&#x60; of the model list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: save() should perform a POST XHR to the &#x60;root&#x60; of a new model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: save() should perform a PUT XHR to the &#x60;url&#x60; an exiting model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: destroy({remove: true}) should perform a DELETE XHR to the &#x60;url&#x60; an exiting model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: EMULATE_HTTP should use POST instead of PUT or DELETE XHRs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: sync() should accept &#x60;csrfToken&#x60;, &#x60;headers&#x60;, and &#x60;timeout&#x60; options</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>ModelSync.REST: Failed sync() calls should pass the HTTP status code and message to the callback</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: initializer should set attributes based on config options</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: subclass with default routes should work</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;html5&#x60; attribute should have a default value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;root&#x60; attribute should have a default value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;routes&#x60; attribute should have a default value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: setting the &#x60;routes&#x60; attribute should reset all routes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;routes&#x60; should support both &#x60;callback&#x60; and &#x60;callbacks&#x60; properties</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;callbacks&#x60; should supercede &#x60;callback&#x60; property for &#x60;routes&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;ready&#x60; event should fire when the router is ready to dispatch</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &#x60;ready&#x60; event should set e.dispatched to true if called after dispatch</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.021</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: getPath() should return the current location &#x60;pathname&#x60; when no hash is set in all browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: getPath() should return the &#x60;pathname&#x60; in HTML5 browsers and otherwise return the hash path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: getPath() should return the hash path in non HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: route() should add a route</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: match() should return an array of routes that match the given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: hasRoute() should return &#x60;true&#x60; if one or more routes match the given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: hasRoute() should support full URLs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: hasRoute() should always return &#x60;false&#x60; for URLs with different origins</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: dispatch() should dispatch to the first route that matches the current URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.029</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: dispatch() should upgrade hash URLs to HTML5 URLs in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.035</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: removeRoot() should remove the root URL from a given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: removeRoot() should strip the origin (&quot;http://foo.com&quot;) portion of the URL, if any</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: replace() should replace the current history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: save() should create a new history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: consecutive save() calls should dispatch to the correct routes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: save() should not include the &#x60;root&#x60; in the hash path if it is already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: save() should include the &#x60;root&#x60; in the hash path if it is not already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: save() should dispath in non HTML5 browsers even when the &#x60;hash&#x60; does not change</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.018</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: replace() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: save() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: _joinURL() should normalize &quot;/&quot; separators</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: _dispatch() should pass &#x60;src&#x60; through to request object passed to route handlers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: _getRegex() should return regexes that do not match too much</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should be called in the context of the router</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should receive a request object, response object, and &#x60;next&#x60; function as params</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should support multiple callback functions</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should support an array of callback functions</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should support an array of callback function string names</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes should support nested arrays of mixed function and string callbacks</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: route middleware should be able to skip to the next route</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: request object should contain captured route parameters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: route parameters should be decoded</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: request object should contain a &#x60;pendingRoutes&#x60; property</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: calling &#x60;res()&#x60; should have the same result as calling &#x60;next()&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: calling &#x60;next()&#x60; should pass control to the next matching route</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: &quot;*&quot; should be a catch-all route</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: routes containing a &quot;*&quot; should match the segments which follow it</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: multiple routers should be able to coexist and have duplicate route handlers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.202</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: multiple nested routers should be able to coexist and duplicate route handlers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.251</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: multiple nested non-HTML5 routers should be able to coexist and duplicate route handlers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.257</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Router: multiple routers should respond to history events after one router is destroyed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.201</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: container should be a &lt;div&gt; node by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: default container should be created lazily</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: container events should be attached lazily when specified via a valueFn</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: container events should be attached lazily when specified via an attr value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: events property should be an empty object by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: events with missing handler functions should not cause an error during destruction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: initializer should allow setting a ad-hoc attrs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: initializer should allow setting a containerTemplate at init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: initializer should allow setting events at init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: initializer should allow setting a template at init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: create() should not be called on init</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: destructor should not remove the container by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: destructor should remove the container from the DOM if &#x60;remove&#x60; options is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: attachEvents() should be called when the container attr changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: create() should create and return a container node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: remove() should remove the container node from the DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View: render() should be a chainable noop</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View.NodeMap: getByNode() should return a View instance associated with the given Node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View.NodeMap: getByNode() should return the nearest View instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View.NodeMap: getByNode() should return null when no View is found</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>View.NodeMap: View should be removed from the instances map when destroy() is called</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Fri May 24 2013 05:53:53 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
