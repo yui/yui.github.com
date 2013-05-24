@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Attributes]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Attributes]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;activeView&#x60; should be read-only</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;activeView&#x60; should be modifiable via the &#x60;showView()&#x60; method</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;container&#x60; and &#x60;viewContainer&#x60; should be able to be the same node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;container&#x60; should be stamped with the App CSS class</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;viewContainer&#x60; should be stamped with the App Views CSS class when the app is rendered</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;viewContainer&#x60; should only be settable during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;Y.App.serverRouting&#x60; should be &#x60;undefined&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;serverRouting&#x60; should default to the value of &#x60;Y.App.serverRouting&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;serverRouting&#x60; should only be settable during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;serverRouting&#x60; should only be settable with a user-specified value during initialization</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;false&#x60; should force &#x60;html5&#x60; to default to &#x60;false&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;false&#x60; should force &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;true&#x60; should allow &#x60;html5&#x60; to default to &#x60;true&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;true&#x60; should allow &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;undefined&#x60; should allow &#x60;html5&#x60; to default to &#x60;true&#x60; in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Setting &#x60;serverRouting&#x60; to &#x60;undefined&#x60; should allow &#x60;html5&#x60; to default to &#x60;false&#x60; in non-HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;html5&#x60; should be overridable on construction even when &#x60;serverRouting&#x60; is false</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Fri May 24 2013 05:42:14 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
