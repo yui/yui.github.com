@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>Results for dev-3.x/65</title>
+        <title>Tests for [Lifecycle]</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
         <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
     </head>
     <body class="yui3-skin-sam phpbb ltr">
         <div id="bd">
-            <h1>Results for dev-3.x/65</h1>
+            <h1>Tests for [Lifecycle]</h1>
             <table>
                 <tbody>
                     <tr>
@@ -18,7 +18,43 @@
                     </tr>
                     
                     <tr>
-                        <td>initializer should accept a &#x60;sortComparator&#x60; config option</td>
+                        <td>&#x60;container&#x60; should default to the &#x60;&lt;body&gt;&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A specified &#x60;container&#x60; should be used during construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;viewContainer&#x60; should be a new &#x60;&lt;div/&gt;&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A specified &#x60;viewContainer&#x60; should be used during construction</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,68 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>initializer should accept a &#x60;sortReverse&#x60; config option</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-iv>
-    </body>
-</html>
-
-:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>constructor should generate a unique id if one is not specified</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-or: &#x60;rootNode&#x60; config property should support a custom Tree.Node instance</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>constructor: should allow both &#x60;nodes&#x60; and &#x60;rootNode&#x60; to be specified</td>
+                        <td>&#x60;activeView&#x60; should be undefined by default</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -103,7 +78,7 @@ or: &#x60;rootNode&#x60; config property should support a custom Tree.Node insta
                     </tr>
                     
                     <tr>
-                        <td>destructor should destroy the root node</td>
+                        <td>&#x60;activeView&#x60; should not be overrideable in the constructor config</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -115,40 +90,7 @@ or: &#x60;rootNode&#x60; config property should support a custom Tree.Node insta
                     </tr>
                     
                     <tr>
-                        <td>destructor should free references to allow garbage collection</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-  </tr>
-                    
-                    <tr>
-                        <td>initializer should allow setting a template at init</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>create() should not be called on init</td>
+                        <td>&#x60;linkSelector&#x60; should be &#x60;&quot;a&quot;&#x60; by default</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -160,7 +102,7 @@ or: &#x60;rootNode&#x60; config property should support a custom Tree.Node insta
                     </tr>
                     
                     <tr>
-                        <td>destructor should not remove the container by default</td>
+                        <td>&#x60;serverRouting&#x60; should default to undefined</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -172,7 +114,7 @@ or: &#x60;rootNode&#x60; config property should support a custom Tree.Node insta
                     </tr>
                     
                     <tr>
-                        <td>destructor should remove the container from the DOM if &#x60;remove&#x60; options is truthy</td>
+                        <td>&#x60;serverRouting&#x60; should be overrideable via the constructor</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -183,21 +125,57 @@ or: &#x60;rootNode&#x60; config property should support a custom Tree.Node insta
                         
                     </tr>
                     
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
+                    <tr>
+                        <td>&#x60;views&#x60; property should be empty by default</td>
 
-       
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;views&#x60; should be a copy of the &#x60;views&#x60; object on the prototype</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Destroying an app with &#x60;{remove: true}&#x60; should destroy its &#x60;container&#x60; and &#x60;viewContainer&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Destroying an app with &#x60;{remove: true}&#x60; with the &#x60;&lt;body&gt;&#x60; for a container should only remove its CSS classes, not the body from the DOM</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
                         <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
+            <center>Generated: Sat May 25 2013 06:05:46 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

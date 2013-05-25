@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>Results for dev-3.x/65</title>
+        <title>Tests for [Events]</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
         <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
     </head>
     <body class="yui3-skin-sam phpbb ltr">
         <div id="bd">
-            <h1>Results for dev-3.x/65</h1>
+            <h1>Tests for [Events]</h1>
             <table>
                 <tbody>
                     <tr>
@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should fire a &#x60;select&#x60; event</td>
+                        <td>should attach events on init in HTML5 browsers</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,7 +30,19 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should not fire a &#x60;select&#x60; event if the specified node is already selected</td>
+                        <td>&#x60;error&#x60; event should fire on Ajax failure</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.02</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +54,19 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should not fire a &#x60;select&#x60; event if options.silent is truthy</td>
+                        <td>&#x60;load&#x60; event should fire on Ajax success</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.045</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;load&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should pass along a &#x60;src&#x60;</td>
+                        <td>&#x60;navigate&#x60; event facade should contain the options passed to &#x60;navigate()&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +90,7 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should fire an &#x60;unselect&#x60; event</td>
+                        <td>&#x60;navigate&#x60; event should fire when a pjax link is clicked</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,43 +102,7 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if the specified node is not selected</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if options.silent is truthy</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>unselectNode() should pass along a &#x60;src&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;select&#x60; event should be preventable</td>
+                        <td>&#x60;navigate&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,7 +114,79 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;unselect&#x60; event should be preventable</td>
+                        <td>&#x60;navigate&#x60; event should not fire when a link is clicked with a button other than the left button</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should not fire when a modifier key is pressed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should not fire when a click element is not an anchor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should not fire when a link is clicked with a URL from another origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should not fire for a hash URL that resolves to the current page</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should fire for a hash-less URL that resolves to the current page</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;navigate&#x60; event should fire for a hash URL that resolves to the current page when &#x60;navigateOnHash&#x60; is &#x60;true&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -139,166 +199,7 @@
                     
                 </tbody>
             </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-e any events if options.silent is truthy</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>toggleOpenNode() should pass along a custom &#x60;src&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;close&#x60; event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;open&#x60; event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-               <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>removeNode() should pass along a custom &#x60;src&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;add&#x60; event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;clear&#x60; event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;remove&#x60; event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-removed silently</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>list should update its id map when a model id changes</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>list should ignore id changes for models not in the list</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Mon May 20 2013 13:45:01 GMT+0000 (UTC)</center>
+            <center>Generated: Sat May 25 2013 06:05:46 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
