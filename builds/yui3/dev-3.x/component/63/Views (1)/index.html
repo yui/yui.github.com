@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Views]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Views]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>A registered view with falsy &#x60;type&#x60; should default to &#x60;Y.View&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A registered view with a function &#x60;type&#x60; should return an instance of that function</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A registered view with a string &#x60;type&#x60; should look on the &#x60;Y&#x60; object for the constructor</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A View instance should be preserved when registered with &#x60;preserve&#x60; as &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A view registered with a specified &#x60;instance&#x60; should be preserved when &#x60;preserve&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A View instance should not be preserved when registered with &#x60;preserve&#x60; as &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A registered view should not be preserved by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Parent/child view relationships should be determinable from the &#x60;views&#x60; metadata</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Parent/child view relationships should be determinable from view instances</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;Y.App&#x60; subclasses should be able to specify view metadata on the &#x60;prototype&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>The &#x60;views&#x60; metadata on the &#x60;prototype&#x60; should be merged with the specified &#x60;views&#x60; during construction</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should set the specified view instance or name as the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should construct a registered view instance with the specified &#x60;config&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should accept a &#x60;null&#x60; &#x60;view&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should prepend the new &#x60;activeView&#x60; when &#x60;options.prepend&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; when &#x60;options.update&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should not update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; when &#x60;options.update&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should not update the attributes of the &#x60;view&#x60; with the &#x60;config&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should render a newly-created &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should render an existing &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;true&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should not render a newly-created &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should not render an existing &#x60;view&#x60; when &#x60;options.render&#x60; is &#x60;false&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should render a newly-created &#x60;view&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should not render an existing &#x60;view&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;options&#x60; passed to &#x60;showView()&#x60; should be mixed into the &#x60;activeViewChange&#x60; event facade</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should accept a &#x60;callback&#x60; as either the third or fourth param</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should call the specified &#x60;callback&#x60; with &#x60;this&#x60; context</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should pass the new &#x60;activeView&#x60; to the &#x60;callback&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;showView()&#x60; should call the specified &#x60;callback&#x60; even when the &#x60;activeView&#x60; did not change</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;activeViewChange&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>An &#x60;activeView&#x60; should bubble events to the app</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>The previous &#x60;activeView&#x60; should no longer bubble events to the app</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A preserved view should not be destroyed when its no longer the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A non preserved view should be destroyed when its no longer the &#x60;activeView&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Sat May 25 2013 01:06:55 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
