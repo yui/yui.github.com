@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>Results for dev-3.x/67</title>
+        <title>Tests for [Lifecycle]</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
         <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
     </head>
     <body class="yui3-skin-sam phpbb ltr">
         <div id="bd">
-            <h1>Results for dev-3.x/67</h1>
+            <h1>Tests for [Lifecycle]</h1>
             <table>
                 <tbody>
                     <tr>
@@ -18,41 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>initializer should accept a &#x60;sortComparator&#x60; config option</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>initializer should accept a &#x60;sortReverse&#x60; config option</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Tue May 21 2013 19:57:07 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-iv>
-    </body>
-</html>
-
-e</td>
+                        <td>destroy() should destroy the model instance</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -64,7 +30,19 @@ e</td>
                     </tr>
                     
                     <tr>
-                        <td>constructor: &#x60;rootNode&#x60; config property should support a custom root node config</td>
+                        <td>destroy() should call a callback if provided as the only arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should call a callback if provided as the second arg</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -76,31 +54,19 @@ e</td>
                     </tr>
                     
                     <tr>
-                        <td>constructor: &#x60;rootNode&#x60; config property should support a custom Tree.Node instance</td>
+                        <td>destroy() should delete the model if the &#x60;remove&#x60; option is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>constructor: should allow both &#x60;nodes&#x60; and &#x60;rootNode&#x60; to be specified</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>destructor should destroy the root node</td>
+                        <td>destroy() should remove the model from all lists</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -112,89 +78,20 @@ e</td>
                     </tr>
                     
                     <tr>
-                        <td>destructor should free references to allow garbage collection</td>
+                        <td>destroy() should not remove the model lists when sync has an error</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Tue May 21 2013 19:57:07 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-  </tr>
-                    
-                    <tr>
-                        <td>initializer should allow setting a template at init</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>create() should not be called on init</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>destructor should not remove the container by default</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>destructor should remove the container from the DOM if &#x60;remove&#x60; options is truthy</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Tue May 21 2013 19:57:07 GMT+0000 (UTC)</center>
-        </div>
-    </body>
-</html>
-
-      
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                </tbody>
-            </table>
-            <center>Generated: Tue May 21 2013 19:57:07 GMT+0000 (UTC)</center>
+            <center>Generated: Tue May 28 2013 17:27:26 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
