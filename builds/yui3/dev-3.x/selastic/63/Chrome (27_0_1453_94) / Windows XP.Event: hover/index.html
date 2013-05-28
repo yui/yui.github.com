@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Chrome (27_0_1453_94) / Windows XP.Event: hover]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Chrome (27_0_1453_94) / Windows XP.Event: hover]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test node.on(&#x27;hover&#x27;, over, out)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test container.on(&#x27;hover&#x27;, over, out)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test Y.on(&#x27;hover&#x27;, over, out, &#x27;#foo&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test nodelist.on(&#x27;hover&#x27;, over, out)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test node.delegate(&#x27;hover&#x27;, over, out, filter)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test node.on(&#x27;hover&#x27;, over, out, thisObj)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test Y.on(&#x27;hover&#x27;, over, out, &#x27;#foo&#x27;, thisObj)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test nodelist.on(&#x27;hover&#x27;, over, out, thisObj)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test node.on(&#x27;hover&#x27;, over, out, thisObj, arg)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test Y.on(&#x27;hover&#x27;, over, out, &#x27;#foo&#x27;, thisObj, arg)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test nodelist.on(&#x27;hover&#x27;, over, out, thisObj, arg)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test node.on(&#x27;hover&#x27;, over, out, null, arg)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test Y.on(&#x27;hover&#x27;, over, out, &#x27;#foo&#x27;, null, arg)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>subscribe: test nodelist.on(&#x27;hover&#x27;, over, out, null, arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.on(&#x27;hover&#x27;, over, out); node.detach(&#x27;hover&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.on(&#x27;hover&#x27;, over, out); node.detach(&#x27;hover&#x27;, over);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.on(&#x27;cat|hover&#x27;, over, out); node.detach(&#x27;cat|hover&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.on(&#x27;cat|hover&#x27;, over, out); node.detach(&#x27;cat|*&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.on(&#x27;hover&#x27;, over, out); handle.detach();</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.delegate(&#x27;hover&#x27;, over, out, filter); node.detach(&#x27;hover&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.delegate(&#x27;hover&#x27;, over, out, filter); node.detach(&#x27;hover&#x27;, over);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.delegate(&#x27;cat|hover&#x27;, over, out, filter); node.detach(&#x27;cat|hover&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.delegate(&#x27;cat|hover&#x27;, over, out, filter); node.detach(&#x27;cat|*&#x27;);</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>detach: test node.delegate(&#x27;hover&#x27;, over, out, filter); handle.detach();</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Tue May 28 2013 17:21:23 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
