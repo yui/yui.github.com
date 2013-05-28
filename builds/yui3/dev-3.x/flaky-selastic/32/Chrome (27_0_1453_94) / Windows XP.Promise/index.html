@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Chrome (27_0_1453_94) / Windows XP.Promise]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Chrome (27_0_1453_94) / Windows XP.Promise]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: calling Y.Promise as a function should return an instance of Y.Promise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: promise.then returns a promise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: promise state should change only once</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: fulfilling more than once should not change the promise value</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: rejecting more than once should not change the rejection reason</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: correct value for &quot;this&quot; inside the promise init function</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: callbacks passed to then should be called asynchronously</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: throwing inside a callback should turn into a rejection</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: returning a promise from a callback should link both promises</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.017</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: |this| inside a callback must be the global object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: |this| inside a callback must be undefined in strict mode</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: detecting YUI promises</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: detecting pseudo promises</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise tests: failing for values and almost promises</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Y.when tests: a promise should not be modified</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Y.when tests: values should be wrapped in a promise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Y.when tests: callbacks should behave the same as using then()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Y.when tests: errbacks should behave the same as using then()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.007</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: batch should return a promise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: empty parameter list should return an empty array</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: order of promises should be preserved</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.032</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: values should be wrapped in a promise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: correct handling of function parameters</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Promise: Y.batch: batch should fail as fast as possible</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Tue May 28 2013 17:15:42 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
