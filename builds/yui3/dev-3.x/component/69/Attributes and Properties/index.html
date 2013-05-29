@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>Results for dev-3.x/69</title>
+        <title>Tests for [Attributes and Properties]</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
         <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
     </head>
     <body class="yui3-skin-sam phpbb ltr">
         <div id="bd">
-            <h1>Results for dev-3.x/69</h1>
+            <h1>Tests for [Attributes and Properties]</h1>
             <table>
                 <tbody>
                     <tr>
@@ -18,7 +18,31 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;addPjaxParam&#x60; should be true by default</td>
+                        <td>Attributes should be settable at instantiation time</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Models should allow ad-hoc attributes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Custom id attribute should be settable at instantiation time</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,55 +54,19 @@
                     </tr>
                     
                     <tr>
-                        <td>Pjax param should be added when &#x60;addPjaxParam&#x60; is true</td>
+                        <td>&#x60;_isYUIModel&#x60; property should be true</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.025</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>Pjax param should be appended to an existing query string when &#x60;addPjaxParam&#x60; is true</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.048</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>Pjax param should be added before the fragment when &#x60;addPjaxParam&#x60; is true</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.051</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>Pjax param should not be added when &#x60;addPjaxParam&#x60; is false</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.057</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;container&#x60; should be null by default</td>
+                        <td>&#x60;id&#x60; attribute should be an alias for the custom id attribute</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,7 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>container&#x60; should always be &#x60;null&#x60; or a Node instance</td>
+                        <td>&#x60;changed&#x60; property should be a hash of attributes that have changed since last save() or load()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -102,7 +90,31 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;contentSelector&#x60; should be null by default</td>
+                        <td>clientId attribute should be automatically generated</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;lastChange&#x60; property should contain attributes that changed in the last &#x60;change&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;lists&#x60; property should be an array of ModelList instances that contain this model</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -114,7 +126,19 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;linkSelector&#x60; should select links with class &quot;yui3-pjax&quot; by default</td>
+                        <td>Resetting the custom id attribute should reset &#x60;id&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>A custom id attribute should not be set when &#x60;id&#x60; fails validation</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,56 +150,32 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;navigateOnHash&#x60; should be false by default</td>
+                        <td>&#x60;id&#x60; should not be set when the custom id attribute fails validation</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;scrollToTop&#x60; should be true by default</td>
+                        <td>A custom id attribute should be same as what is returned from &#x60;id&#x60; setter</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;timeout&#x60; should default to 30000ms</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;titleSelector&#x60; should select the title tag by default</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Fri May 24 2013 05:37:07 GMT+0000 (UTC)</center>
+            <center>Generated: Wed May 29 2013 14:13:55 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
