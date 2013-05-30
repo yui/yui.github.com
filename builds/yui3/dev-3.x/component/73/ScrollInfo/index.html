@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
     <head>
-        <title>Results for dev-3.x/73</title>
+        <title>Tests for [ScrollInfo]</title>
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
         <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
     </head>
     <body class="yui3-skin-sam phpbb ltr">
         <div id="bd">
-            <h1>Results for dev-3.x/73</h1>
+            <h1>Tests for [ScrollInfo]</h1>
             <table>
                 <tbody>
                     <tr>
@@ -42,6 +42,18 @@
                     </tr>
                     
                     <tr>
+                        <td>getOffscreenNodes() should return an empty NodeList if no nodes match</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
                         <td>body: getOffscreenNodes() should respect the margin parameter</td>
 
                         
@@ -50,6 +62,18 @@
 
                         
                         <td>0.054</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>div: getOffscreenNodes() should return offscreen nodes when scrolled</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.053</td>
                         
                     </tr>
                     
@@ -78,7 +102,31 @@
                     </tr>
                     
                     <tr>
+                        <td>getOnscreenNodes() should return an empty NodeList if no nodes match</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
                         <td>body: getOnscreenNodes() should respect the margin parameter</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.053</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>div: getOnscreenNodes() should return onscreen nodes when scrolled</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -97,7 +145,7 @@
                         
 
                         
-                        <td>0.052</td>
+                        <td>0.053</td>
                         
                     </tr>
                     
@@ -109,7 +157,7 @@
                         
 
                         
-                        <td>0.053</td>
+                        <td>0.054</td>
                         
                     </tr>
                     
@@ -122,6 +170,78 @@
 
                         
                         <td>0.053</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>body: isNodeOnscreen() should return &#x60;true&#x60; for onscreen nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>body: isNodeOnscreen() should return &#x60;false&#x60; for offscreen nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>div: isNodeOnscreen() should return &#x60;true&#x60; for onscreen nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>div: isNodeOnscreen() should return &#x60;false&#x60; for offscreen nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>isNodeOnscreen() should support selectors and HTMLElements</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>isNodeOnscreen() should return &#x60;false&#x60; for nonexistent nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
@@ -145,7 +265,7 @@
                         
 
                         
-                        <td>0.053</td>
+                        <td>0.052</td>
                         
                     </tr>
                     
@@ -158,6 +278,18 @@
 
                         
                         <td>0.053</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>scroll event should be throttled within the scrollDelay</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.702</td>
                         
                     </tr>
                     
@@ -181,7 +313,7 @@
                         
 
                         
-                        <td>0.053</td>
+                        <td>0.052</td>
                         
                     </tr>
                     
@@ -217,7 +349,7 @@
                         
 
                         
-                        <td>0.052</td>
+                        <td>0.053</td>
                         
                     </tr>
                     
@@ -229,7 +361,7 @@
                         
 
                         
-                        <td>0.052</td>
+                        <td>0.053</td>
                         
                     </tr>
                     
@@ -241,7 +373,7 @@
                         
 
                         
-                        <td>0.054</td>
+                        <td>0.053</td>
                         
                     </tr>
                     
@@ -265,7 +397,7 @@
                         
 
                         
-                        <td>0.053</td>
+                        <td>0.052</td>
                         
                     </tr>
                     
@@ -337,7 +469,7 @@
                         
 
                         
-                        <td>0.053</td>
+                        <td>0.054</td>
                         
                     </tr>
                     
@@ -355,7 +487,7 @@
                     
                 </tbody>
             </table>
-            <center>Generated: Fri May 24 2013 16:25:54 GMT+0000 (UTC)</center>
+            <center>Generated: Thu May 30 2013 00:11:16 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
