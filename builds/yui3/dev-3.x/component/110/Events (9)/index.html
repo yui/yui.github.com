@@ -18,43 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>clear event should fire when the query is cleared</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.004</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>clear event should fire when the value attribute is cleared via the API</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.008</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>clear event should be preventable</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.003</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>query event should fire when the value attribute is changed via the UI</td>
+                        <td>selectNode() should fire a &#x60;select&#x60; event</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,44 +30,116 @@
                     </tr>
                     
                     <tr>
-                        <td>query event should be preventable</td>
+                        <td>selectNode() should not fire a &#x60;select&#x60; event if the specified node is already selected</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.003</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>results event should fire when a source returns results</td>
+                        <td>selectNode() should not fire a &#x60;select&#x60; event if options.silent is truthy</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.003</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>results event should be preventable</td>
+                        <td>selectNode() should pass along a &#x60;src&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.003</td>
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>unselectNode() should fire an &#x60;unselect&#x60; event</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if the specified node is not selected</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if options.silent is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>unselectNode() should pass along a &#x60;src&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;select&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;unselect&#x60; event should be preventable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

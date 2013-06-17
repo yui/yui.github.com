@@ -18,19 +18,19 @@
                     </tr>
                     
                     <tr>
-                        <td>closeNode() should close the specified node</td>
+                        <td>add() should add everything as objects, not models</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.006</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>closeNode() should be chainable</td>
+                        <td>add() should generate a clientId for added objects if necessary</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +42,7 @@
                     </tr>
                     
                     <tr>
-                        <td>openNode() should open the specified node</td>
+                        <td>free() should free the given model or model index</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +54,7 @@
                     </tr>
                     
                     <tr>
-                        <td>openNode() should be chainable</td>
+                        <td>free() with no args should free all models</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>toggleOpenNode() should open a closed node</td>
+                        <td>get() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>toggleOpenNode() should close an open node</td>
+                        <td>getAsHTML() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,7 +90,7 @@
                     </tr>
                     
                     <tr>
-                        <td>toggleOpenNode() should be chainable</td>
+                        <td>getAsURL() should get properties, not attributes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -98,12 +98,156 @@
 
                         
                         <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>indexOf() should find objects in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>indexOf() should find revived models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should accept both objects and models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should maintain indices for revived models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>reset() should accept an array of objects/models or a ModelList</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>revive() should revive an index into a model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>revive() should revive an object into a model</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>revive() with no args should revive all models in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>revive() should preserve clientIds</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Changing an attribute on a revived model should update the original object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_isInList() should indicate whether an item is in the list</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_modelToObject() should convert a model instance to a plain object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

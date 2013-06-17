@@ -18,32 +18,80 @@
                     </tr>
                     
                     <tr>
-                        <td>Initializer should accept an inputNode</td>
+                        <td>destroy() should destroy the model instance</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.008</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>destructor should detach events</td>
+                        <td>destroy() should call a callback if provided as the only arg</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.004</td>
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should call a callback if provided as the second arg</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should delete the model if the &#x60;remove&#x60; option is truthy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should remove the model from all lists</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>destroy() should not remove the model lists when sync has an error</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

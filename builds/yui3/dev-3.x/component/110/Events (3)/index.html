@@ -18,7 +18,19 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should fire a &#x60;select&#x60; event</td>
+                        <td>&#x60;add&#x60; event should fire when a model is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;add&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,7 +42,31 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should not fire a &#x60;select&#x60; event if the specified node is already selected</td>
+                        <td>&#x60;add&#x60; event should not fire when a model is added silently</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;change&#x60; event should bubble up from models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;create&#x60; event should fire when a model is created</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +78,55 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should not fire a &#x60;select&#x60; event if options.silent is truthy</td>
+                        <td>&#x60;create&#x60; event should receive options passed to the create() method</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should bubble up from models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should fire when a model with a duplicate clientId is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should fire when a model with a duplicate id is added</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;error&#x60; event should fire when a model that isn&#x27;t in the list is removed</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +138,7 @@
                     </tr>
                     
                     <tr>
-                        <td>selectNode() should pass along a &#x60;src&#x60;</td>
+                        <td>&#x60;error&#x60; event should fire when a sync layer response can&#x27;t be parsed</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +150,43 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should fire an &#x60;unselect&#x60; event</td>
+                        <td>&#x60;load&#x60; event should fire after a successful load operation</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;reset&#x60; event should fire when the list is reset or sorted</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;reset&#x60; event facade should contain sorted models</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;reset&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +198,7 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if the specified node is not selected</td>
+                        <td>&#x60;reset&#x60; event should not fire when the list is reset silently</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,7 +210,31 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should not fire an &#x60;unselect&#x60; event if options.silent is truthy</td>
+                        <td>&#x60;reset&#x60; event should allow the caller to override the &#x60;src&#x60; property on the event facade</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;remove&#x60; event should fire when a model is removed</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;remove&#x60; event should be preventable</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -102,44 +246,44 @@
                     </tr>
                     
                     <tr>
-                        <td>unselectNode() should pass along a &#x60;src&#x60;</td>
+                        <td>&#x60;remove&#x60; event should not fire when a model is removed silently</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;select&#x60; event should be preventable</td>
+                        <td>list should update its id map when a model id changes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;unselect&#x60; event should be preventable</td>
+                        <td>list should ignore id changes for models not in the list</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

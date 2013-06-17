@@ -18,116 +18,128 @@
                     </tr>
                     
                     <tr>
-                        <td>compile() should return a compiled template function</td>
+                        <td>&#x60;createView()&#x60; should always return a new &#x60;Y.View&#x60; instance</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.006</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>compile() should return precompiled source if the &#x60;precompile&#x60; option is &#x60;true&#x60;</td>
+                        <td>&#x60;createView()&#x60; should return a new instance of a named, registered view</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>compile() options should be overridable</td>
+                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new &#x60;Y.View&#x60; instance</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>precompile() should return precompiled template code</td>
+                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new instance of a named, registered view</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>precompile() should respect compile options</td>
+                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a named, registered view</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>render() should compile and render in a single step</td>
+                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a view constructed by &#x60;createView()&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>render() should respect compile options</td>
+                        <td>&#x60;render()&#x60; should append the &#x60;viewContainer&#x60; into the &#x60;container&#x60;</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>revive() should revive a precompiled template into an executable template function</td>
+                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; already containing the &#x60;viewContainer</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0</td>
+                        <td>0.002</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>&#x60;this&#x60; object in the compiled template should refer to the data object</td>
+                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; and &#x60;viewContainer&#x60; being the same node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.001</td>
+                        <td>0.011</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>&#x60;render()&#x60; should append the &#x60;activeView&#x60; to the &#x60;viewContainer&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should always return a new &#x60;Y.View&#x60; instance</td>
+                        <td>getURL() should return an empty string by default</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,31 +30,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;createView()&#x60; should return a new instance of a named, registered view</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new &#x60;Y.View&#x60; instance</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;createView()&#x60; should apply the specified &#x60;config&#x60; to the new instance of a named, registered view</td>
+                        <td>getURL() of a model list should return the &#x60;root&#x60; of its model by default</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +42,79 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a named, registered view</td>
+                        <td>getURL() of a model list should return its &#x60;url&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() of a new model should return its &#x60;root&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() of a model should return its &#x60;root&#x60; when the &#x60;action&#x60; is &quot;create&quot;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; and normalize slashes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() of a model should return its &#x60;url&#x60; if defined</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute values</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +126,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;getViewInfo()&#x60; should return the metadata for a view constructed by &#x60;createView()&#x60;</td>
+                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with &#x60;options&#x60; values</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,31 +138,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should append the &#x60;viewContainer&#x60; into the &#x60;container&#x60;</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; already containing the &#x60;viewContainer</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>&#x60;render()&#x60; should properly handle the &#x60;container&#x60; and &#x60;viewContainer&#x60; being the same node</td>
+                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute and &#x60;options&#x60; values</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,7 +150,7 @@
                     </tr>
                     
                     <tr>
-                        <td>&#x60;render()&#x60; should append the &#x60;activeView&#x60; to the &#x60;viewContainer&#x60;</td>
+                        <td>getURL() should URL-encode the &#x60;url&#x60; substitution values</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -134,12 +158,72 @@
 
                         
                         <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getURL() should not substitute Arrays, Objects, or Boolean values into the &#x60;url&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>parse() should receive the full Y.io response object when &#x60;parseIOResponse is falsy</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>parseIOResponse() should alter the response passed to &#x60;parse()&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>serialize() should return a JSON string by default</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>serialize() should be passed the &#x60;sync()&#x60; &#x60;action&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

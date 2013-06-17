@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>isSelected() should return &#x60;true&#x60; if this node is selected, &#x60;false&#x60; otherwise</td>
+                        <td>getPath() should return the current location &#x60;pathname&#x60; when no hash is set in all browsers</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,7 +30,31 @@
                     </tr>
                     
                     <tr>
-                        <td>select() should wrap Tree#selectNode()</td>
+                        <td>getPath() should return the &#x60;pathname&#x60; in HTML5 browsers and otherwise return the hash path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.006</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>getPath() should return the hash path in non HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>route() should add a route</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +66,79 @@
                     </tr>
                     
                     <tr>
-                        <td>select() should be chainable</td>
+                        <td>match() should return an array of routes that match the given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>hasRoute() should return &#x60;true&#x60; if one or more routes match the given path</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>hasRoute() should support full URLs</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>hasRoute() should always return &#x60;false&#x60; for URLs with different origins</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>dispatch() should dispatch to the first route that matches the current URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.033</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>dispatch() should upgrade hash URLs to HTML5 URLs in HTML5 browsers</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.037</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>removeRoot() should remove the root URL from a given path</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +150,7 @@
                     </tr>
                     
                     <tr>
-                        <td>unselect() should wrap Tree#unselectNode()</td>
+                        <td>removeRoot() should strip the origin (&quot;http://foo.com&quot;) portion of the URL, if any</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +162,139 @@
                     </tr>
                     
                     <tr>
-                        <td>unselect() should be chainable</td>
+                        <td>replace() should replace the current history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should be able to be called with no args using html5</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should be able to be called with no args using not html5</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.009</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should create a new history entry</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.012</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>consecutive save() calls should dispatch to the correct routes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.023</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should not include the &#x60;root&#x60; in the hash path if it is already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.019</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should include the &#x60;root&#x60; in the hash path if it is not already in the &#x60;pathname&#x60;</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should dispatch in non HTML5 browsers even when the &#x60;hash&#x60; does not change</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.017</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>replace() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>save() should error when the URL is not from the same origin</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_joinURL() should normalize &quot;/&quot; separators</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_dispatch() should pass &#x60;src&#x60; through to request object passed to route handlers</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -74,12 +302,24 @@
 
                         
                         <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>_getRegex() should return regexes that do not match too much</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
                         
                     </tr>
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>

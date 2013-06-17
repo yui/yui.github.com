@@ -18,7 +18,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() should return an empty string by default</td>
+                        <td>append() should wrap Tree#appendNode()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -30,7 +30,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model list should return the &#x60;root&#x60; of its model by default</td>
+                        <td>depth() should return the depth of a node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -42,7 +42,19 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model list should return its &#x60;url&#x60; if defined</td>
+                        <td>depth() should return 0 for the root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>depth() should return 0 for an unattached node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +66,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a new model should return its &#x60;root&#x60; if defined</td>
+                        <td>empty() should wrap Tree#emptyNode()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +78,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; when the &#x60;action&#x60; is &quot;create&quot;</td>
+                        <td>find() should wrap Tree#findNode()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +90,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; by default</td>
+                        <td>hasChildren() should return &#x60;true&#x60; if the node has children, &#x60;false&#x60; otherwise</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,7 +102,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model should return its &#x60;root&#x60; joined with its &#x60;id&#x60; and normalize slashes</td>
+                        <td>index() should return the numerical index of this node within its parent node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -102,7 +114,19 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() of a model should return its &#x60;url&#x60; if defined</td>
+                        <td>index() should return -1 if this node has no parent</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>indexOf() should return the numerical index of the given child node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -114,19 +138,7 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with &#x60;options&#x60; values</td>
+                        <td>indexOf() should return -1 if the given node is not a direct child of this node</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -138,31 +150,19 @@
                     </tr>
                     
                     <tr>
-                        <td>getURL() should substitute tokenized &#x60;url&#x60;s with attribute and &#x60;options&#x60; values</td>
+                        <td>insert() should wrap Tree#insertNode()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>getURL() should URL-encode the &#x60;url&#x60; substitution values</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.001</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>getURL() should not substitute Arrays, Objects, or Boolean values into the &#x60;url&#x60;</td>
+                        <td>isInTree() should return &#x60;true&#x60; if this node has been inserted into a tree, &#x60;false&#x60; otherwise</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -174,7 +174,19 @@
                     </tr>
                     
                     <tr>
-                        <td>parse() should receive the full Y.io response object when &#x60;parseIOResponse is falsy</td>
+                        <td>isRoot() should return &#x60;true&#x60; if this node is the root of a tree, &#x60;false&#x60; otherwise</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>isRoot() should return &#x60;false&#x60; on destroyed nodes</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -186,7 +198,7 @@
                     </tr>
                     
                     <tr>
-                        <td>parseIOResponse() should alter the response passed to &#x60;parse()&#x60;</td>
+                        <td>next() should return the next sibling</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -198,19 +210,127 @@
                     </tr>
                     
                     <tr>
-                        <td>serialize() should return a JSON string by default</td>
+                        <td>next() should return &#x60;undefined&#x60; if there is no next sibling</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.001</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>serialize() should be passed the &#x60;sync()&#x60; &#x60;action&#x60;</td>
+                        <td>next() should return &#x60;undefined&#x60; if the node is a root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>prepend() should wrap Tree#prependNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>previous() should return the previous sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>previous() should return &#x60;undefined&#x60; if there is no previous sibling</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>previous() should return &#x60;undefined&#x60; if the node is a root node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should wrap Tree#removeNode()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>remove() should be chainable</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>size() should return the total number of descendants contained within this node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>toJSON() should return a serializable object representing this node</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>traverse() should wrap Tree#traverseNode()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -223,7 +343,7 @@
                     
                 </tbody>
             </table>
-            <center>Generated: Thu May 23 2013 22:58:41 GMT+0000 (UTC)</center>
+            <center>Generated: Mon Jun 17 2013 19:52:37 GMT+0000 (UTC)</center>
         </div>
     </body>
 </html>
