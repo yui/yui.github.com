@@ -18,31 +18,19 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.on(&#x27;hover&#x27;, over, out); node.detach(&#x27;hover&#x27;);</td>
+                        <td>test node.on() + node.detach(synth, fn)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
                         
 
                         
-                        <td>0.002</td>
+                        <td>0.003</td>
                         
                     </tr>
                     
                     <tr>
-                        <td>test node.on(&#x27;hover&#x27;, over, out); node.detach(&#x27;hover&#x27;, over);</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.002</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>test node.on(&#x27;cat|hover&#x27;, over, out); node.detach(&#x27;cat|hover&#x27;);</td>
+                        <td>test node.on(synth, fn, thisObj) + node.detach(synth, fn)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -54,7 +42,7 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.on(&#x27;cat|hover&#x27;, over, out); node.detach(&#x27;cat|*&#x27;);</td>
+                        <td>test node.on() + node.detach(synth)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -66,7 +54,7 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.on(&#x27;hover&#x27;, over, out); handle.detach();</td>
+                        <td>test node.on() + node.detach()</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -78,7 +66,115 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.delegate(&#x27;hover&#x27;, over, out, filter); node.detach(&#x27;hover&#x27;);</td>
+                        <td>test node.on() + node.detachAll()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on() + node.purge(true, synth)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.008</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on() + parent.purge(true, synth)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on(synth, fn) + node.detach(synth, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on(synth, fn) + node.detach(synth)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on(synth, fn) + nodelist.detach(synth, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on(synth, fn) + nodelist.detach(synth)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on() + handle.detach()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on() + handle.detach()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on() + nodelist.detach(synth, fn)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -90,31 +186,7 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.delegate(&#x27;hover&#x27;, over, out, filter); node.detach(&#x27;hover&#x27;, over);</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.004</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>test node.delegate(&#x27;cat|hover&#x27;, over, out, filter); node.detach(&#x27;cat|hover&#x27;);</td>
-
-                        
-                        <td style="color:green">&#x2713;</td>
-                        
-
-                        
-                        <td>0.004</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>test node.delegate(&#x27;cat|hover&#x27;, over, out, filter); node.detach(&#x27;cat|*&#x27;);</td>
+                        <td>test nodelist.on(synth, fn, thisObj) + nodelist.detach(synth, fn)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -126,7 +198,7 @@
                     </tr>
                     
                     <tr>
-                        <td>test node.delegate(&#x27;hover&#x27;, over, out, filter); handle.detach();</td>
+                        <td>test nodelist.on() + nodelist.detach(synth)</td>
 
                         
                         <td style="color:green">&#x2713;</td>
@@ -134,6 +206,186 @@
 
                         
                         <td>0.004</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on() + nodelist.detach()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on() + nodelist.detachAll()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on() + parent.purge(true, synth)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on(&#x27;cat|__&#x27;, fn) + node.detach(&#x27;cat|___&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on(&#x27;cat|__&#x27;, fn) + node.detach(&#x27;cat|___&#x27;, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test node.on(&#x27;cat|__&#x27;, fn) + node.detach(&#x27;cat|*&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn, sel) + node.detach(&#x27;cat|___&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn, sel) + node.detach(&#x27;cat|___&#x27;, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.001</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn) + node.detach(&#x27;cat|*&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on(&#x27;cat|__&#x27;, fn) + nodelist.detach(&#x27;cat|___&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on(&#x27;cat|__&#x27;, fn) + nodelist.detach(&#x27;cat|___&#x27;, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test nodelist.on(&#x27;cat|__&#x27;, fn) + node.detach(&#x27;cat|*&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn, multiSelector) + nodelist.detach(&#x27;cat|___&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.002</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn, multiSelector) + nodelist.detach(&#x27;cat|___&#x27;, fn)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>test Y.on(&#x27;cat|__&#x27;, fn, multiSelector) + node.detach(&#x27;cat|*&#x27;)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.003</td>
                         
                     </tr>
                     
