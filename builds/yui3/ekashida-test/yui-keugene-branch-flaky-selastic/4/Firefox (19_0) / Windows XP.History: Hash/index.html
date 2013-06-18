@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Firefox (19_0) / Windows XP.History: Hash]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Firefox (19_0) / Windows XP.History: Hash]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: synthetic hashchange event should fire when the hash changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.052</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: hashchange should be case-sensitive (except in IE8+)</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.044</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: hashchange should NOT be case-sensitive in IE8+</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: createHash() should create a hash string from an object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.013</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: decode() should decode URI components with + for space</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: encode() should encode URI components with + for space</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.022</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: setHash() should set the hash</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.032</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: getHash() should get the current raw (not decoded) hash string</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.036</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: getUrl() should get the current URL</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: parseHash() should parse a hash string into an object</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.014</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: parseHash() should use the current hash if no argument is provided</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.015</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: replaceHash() should replace the hash</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.019</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: bookmarked state should be merged into initialState</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.062</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: add() should change the hash</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.03</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: replace() should replace the hash</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.016</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: Setting an unencoded hash value outside of HistoryHash should not result in two history entries</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.172</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: Setting a non-string value should not result in two history entries</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.279</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>HistoryHash: Subscribers of hashchange should not be called once for every YUI instance</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.161</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Tue Jun 18 2013 14:52:07 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+

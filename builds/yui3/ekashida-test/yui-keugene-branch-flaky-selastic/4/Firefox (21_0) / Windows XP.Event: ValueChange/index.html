@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tests for [Firefox (21_0) / Windows XP.Event: ValueChange]</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400700400italic700italic">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.3/build/cssgrids/cssgrids-min.css">
+        <link rel="stylesheet" href="http://yuilibrary.com/combo/css?main-min.css">
+    </head>
+    <body class="yui3-skin-sam phpbb ltr">
+        <div id="bd">
+            <h1>Tests for [Firefox (21_0) / Windows XP.Event: ValueChange]</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pass</th>
+                        <th>Time</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange event should start polling on mousedown and fire an event when the value changes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.056</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange should support textareas as well</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.062</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange should start polling on keydown</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.062</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange should start polling on keyup for IME keystrokes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.125</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valueChange should be an alias for valuechange for backcompat</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.055</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange should start polling on focus</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.054</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic: valuechange should start polling on focus - with focus()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.063</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Stop Polling: valuechange should stop polling on blur</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.262</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Stop Polling: valuechange should stop polling on blur - with blur()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.267</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Stop Polling: valuechange should not report stale changes that occurred while a node was not focused</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.218</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Stop Polling: valuechange should not report stale changes that occurred while a node was not focused - with focus() and blur()</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.218</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Stop Polling: valuechange should stop polling after timeout</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.765</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Delegation: delegation should be supported on input nodes</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.064</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Delegation: delegation should be supported on textareas</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.061</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Delegation: delegate filters should work properly</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.494</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Delegation: multiple delegated handlers should be supported</td>
+
+                        
+                        <td style="color:green">&#x2713;</td>
+                        
+
+                        
+                        <td>0.051</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <center>Generated: Tue Jun 18 2013 14:52:07 GMT+0000 (UTC)</center>
+        </div>
+    </body>
+</html>
+
